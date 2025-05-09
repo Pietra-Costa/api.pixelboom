@@ -1,6 +1,6 @@
-@api.pixelboom_HostAddress = http://localhost:5017
+@api.pixelboom_HostAddress = http://localhost:3000
 
-GET {{api.pixelboom_HostAddress}}/weatherforecast/
+GET {{api.pixelboom_HostAddress}}/user/
 Accept: application/json
 
 ###
