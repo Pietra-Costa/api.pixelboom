@@ -22,6 +22,7 @@ namespace api.pixelboom.Controllers
         [HttpPost(Name = "CreateUser")]
         public HttpStatusCode CreateUser(User user)
         {
+            user.Id = Guid.NewGuid();
             var userRepository = new UserRepository(new FirebaseConfig());
             userRepository.AddUser(user);
             return HttpStatusCode.OK;
